@@ -22,7 +22,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import root, render
 
-cherrypy.tree.mount(root.Root(), '/')
-cherrypy.tree.mount(render.Render(), '/render')
+cherrypy.tree.mount(root.Root(), '/playground')
+cherrypy.tree.mount(render.Render(), '/playground/render')
 
 application = cherrypy.tree
