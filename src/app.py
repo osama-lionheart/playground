@@ -11,8 +11,6 @@ if cherrypy.__version__.startswith('3.0') and cherrypy.engine.state == 0:
     cherrypy.engine.start(blocking=False)
     atexit.register(cherrypy.engine.stop)
 
-#application = cherrypy.Application(root, script_name=None, config=None)
-
 #==============================================================================
 '''
 Import all the necessary controller module for the mapping.
